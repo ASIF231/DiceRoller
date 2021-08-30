@@ -5,6 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/dice"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textViewnumber"
+        android:layout_marginBottom="20sp"
+        android:src="@drawable/dice1"
+        >
+
+    </ImageView>
 
 
     <TextView
@@ -26,6 +37,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="100sp"
-        android:text="ROLL" />
+        android:shadowRadius="10"
+        android:text="ROLL"
+        app:cornerRadius="5dp" />
 
 </RelativeLayout>
