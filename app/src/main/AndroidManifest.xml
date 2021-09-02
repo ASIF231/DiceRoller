@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.asif23.diceroller">
+    package="com.asif23.diceroller" >
 
     <application
         android:allowBackup="true"
@@ -8,15 +8,22 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icn"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DiceRoller">
+        android:theme="@style/Theme.DiceRoller" >
+        <activity
+            android:name=".activity_Dual_Dice"
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

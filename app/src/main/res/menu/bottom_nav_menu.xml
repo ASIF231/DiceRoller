@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/single_dice"
+        android:title="Person"
+        android:icon="@drawable/dice1"/>
+    <item
+        android:id="@+id/double_dice"
+        android:title="Home"
+        android:icon="@drawable/dice2"/>
+</menu>
