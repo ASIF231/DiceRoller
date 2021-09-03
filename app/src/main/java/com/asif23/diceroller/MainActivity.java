@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn,dual;
+    Button btn,dual,coin;
     int n;
     TextView tv;
     ImageView imageViewDice;
@@ -36,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
         tv= findViewById(R.id.textViewnumber);
         imageViewDice = findViewById(R.id.dice);
         final MediaPlayer mediaPlayersingledice = MediaPlayer.create(this,R.raw.move);
+        coin = findViewById(R.id.btncoin);
+
+        coin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,CoinToss.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         dual.setOnClickListener(new View.OnClickListener() {
             @Override

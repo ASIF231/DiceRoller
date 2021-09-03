@@ -19,7 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.Random;
 
 public class activity_Dual_Dice extends AppCompatActivity {
-    Button btn,single;
+    Button btn,single,coin;
     int n,n1,n2;
     TextView tv;
     ImageView imageViewDice1,imageViewDice2;
@@ -35,6 +35,16 @@ public class activity_Dual_Dice extends AppCompatActivity {
         imageViewDice1 = findViewById(R.id.dice1);
         imageViewDice2 = findViewById(R.id.dice2);
         final MediaPlayer mediaPlayersingledice = MediaPlayer.create(this,R.raw.move);
+        coin = findViewById(R.id.btncoin);
+
+        coin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity_Dual_Dice.this,CoinToss.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         single.setOnClickListener(new View.OnClickListener() {
             @Override

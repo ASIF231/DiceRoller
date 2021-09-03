@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CoinToss">
+
     <ImageView
+        android:id="@+id/dice"
         android:layout_width="200sp"
         android:layout_height="200sp"
-        android:id="@+id/dice"
-        android:layout_centerHorizontal="true"
         android:layout_above="@+id/textViewnumber"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="20sp"
-        android:src="@drawable/dice1"
-        >
+        android:src="@drawable/tails">
 
     </ImageView>
 
@@ -26,7 +26,7 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="40sp"
         android:fontFamily="cursive"
-        android:text="0"
+        android:text="Click on Toss"
         android:textSize="60sp"
         android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="100sp"
         android:shadowRadius="10"
-        android:text="ROLL"
+        android:text="TOSS"
         app:cornerRadius="5dp" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,16 +50,17 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dual Dice"
+            android:text="Single Dice"
             android:layout_weight="1"
-            android:id="@+id/gotodoubleslide"
-            ></Button>
+            android:clickable="false"
+            android:id="@+id/cointossgotosingle"
+            app:iconTint="@color/black"></Button>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Coin Toss"
+            android:text="Dual Dice"
             android:layout_weight="1"
-            android:id="@+id/btncoin"
+            android:id="@+id/cointodouble"
             ></Button>
     </LinearLayout>
 
